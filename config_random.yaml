@@ -1,0 +1,74 @@
+# Pattern Configuration
+pattern:
+  type: "saccade"               # Pattern type (saccade/pursuit)
+  num_rows: 20                  # Number of grid rows
+  num_cols: 50                  # Number of grid columns
+  num_points: 10               # Number of points to generate (less than or equal to num_rows * num_cols)
+  margin: 50                   # Screen edge margin
+  seed: 42                     # Random seed to maintain same appearance order each run
+  show_countdown: true         # Enable/disable countdown display
+  show_direction: false        # Show direction of next point movement
+
+# Timing Configuration
+timing:
+  countdown_seconds: 3         # Initial countdown time
+  point_duration: 1.0         # Display duration for each point (seconds)
+  thank_you_duration: 10       # Thank you screen display duration
+
+# Color Configuration (BGR format)
+colors:
+  background: [0, 0, 0]        # Background color (white)
+  point: [0, 0, 255]          # Point color (red)
+  current_point: [255, 0, 0]   # Current point color (blue)
+  direction_arrow: [0, 255, 0] # Direction arrow color (green)
+  heart: [0, 0, 255]          # Heart color (red)
+  text: [255, 255, 255]       # Text color (black)
+
+# Point Configuration
+point:
+  size: 10                     # Base point size
+  size_multiplier: 2           # Size multiplier for current point
+  thickness: -1                # Thickness (-1 for fill)
+
+# Countdown Text Configuration
+countdown_text:
+  font_scale: 5
+  thickness: 8
+  position: [20, 120]          # [x, y]
+
+# Thank You Text Configuration
+thank_you_text:
+  content: "Thank you very much"
+  messages:                    # List of fun messages to randomly choose from
+    - "Thanks! Your eyes are amazing!"
+    - "Whew! That was eye-mazing!"
+    - "Great job! You're a real eye-chievement!"
+    - "High five! Your focus is super sharp!"
+    - "You nailed it! Eye can't believe it!"
+    - "You're an eye-tracking superstar!"
+    - "Mission accomplished! Eye see what you did there!"
+    - "Eye'm impressed with your dedication!"
+    - "You've got the eye of the tiger!"
+    - "That was spec-tacular!"
+    - "Your eyesight game is strong!"
+    - "Eye spy with my little eye... a champion!"
+    - "You make eye tracking look easy!"
+    - "Eye-mazing performance!"
+    - "You're clearly a vision of success!"
+  font_scale: 2
+  thickness: 2
+  position: [20, 120]          # [x, y]
+
+# Heart Configuration
+heart:
+  size: 30                     # Heart size
+  offset: 40                   # Distance from text
+
+# Font Configuration
+font:
+  type: "FONT_HERSHEY_SIMPLEX"
+
+# Window Configuration
+window:
+  name: "Saccade Pattern"
+  fullscreen: true

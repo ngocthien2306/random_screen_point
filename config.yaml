@@ -1,0 +1,68 @@
+# config.yaml
+
+# Pattern Configuration
+pattern:
+  num_rows: 2                # Number of rows
+  points_per_row: 80          # Points per row
+  margin: 20                  # Edge margin
+  tail_points: 10             # Number of tail points to display
+
+# Timing Configuration
+timing:
+  countdown_seconds: 3        # Initial countdown time
+  point_delay: 0.033         # Delay between points
+  thank_you_duration: 10     # Thank you screen display duration
+
+# Color Configuration (BGR format)
+colors:
+  background: [0, 0, 0]      # Background color (white)
+  point: [255, 0, 0]         # Point color (red)
+  heart: [0, 0, 255]         # Heart color (red)
+  text: [255, 255, 255]      # Text color (black)
+
+# Point Configuration
+point:
+  size: 8                    # Point size
+  thickness: -1              # Thickness (-1 for fill)
+
+# Countdown Text Configuration
+countdown_text:
+  font_scale: 5
+  thickness: 8
+  position: [20, 120]        # [x, y]
+
+# Thank You Text Configuration
+thank_you_text:
+  messages:                    # List of fun messages to randomly choose from
+    - "Thanks! Your eyes are amazing!"
+    - "Whew! That was eye-mazing!"
+    - "Great job! You're a real eye-chievement!"
+    - "High five! Your focus is super sharp!"
+    - "You nailed it! Eye can't believe it!"
+    - "You're an eye-tracking superstar!"
+    - "Mission accomplished! Eye see what you did there!"
+    - "Eye'm impressed with your dedication!"
+    - "You've got the eye of the tiger!"
+    - "That was spec-tacular!"
+    - "Your eyesight game is strong!"
+    - "Eye spy with my little eye... a champion!"
+    - "You make eye tracking look easy!"
+    - "Eye-mazing performance!"
+    - "You're clearly a vision of success!"
+  font_scale: 2
+  thickness: 2
+  position: [20, 120]        # [x, y]
+
+# Heart Configuration
+heart:
+  size: 30                   # Heart size
+  offset: 40                 # Distance from text
+
+# Font Configuration
+font:
+  type: "FONT_HERSHEY_SIMPLEX"
+
+# Window Configuration
+window:
+  name: "Smooth Pursuit Pattern"
+  fullscreen: true
