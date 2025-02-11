@@ -63,7 +63,7 @@ pip install opencv-python numpy screeninfo pyyaml
 
 2. **Running the Experiment:**
    ```bash
-   python eye_tracking.py
+   python smooth.py or saccade.py
    ```
 
 3. **Controls:**
